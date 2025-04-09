@@ -215,8 +215,8 @@ camera.position.set(0, 5, 8); // Initial position before game starts
 // --- Physics Variables ---
 const gravity = new THREE.Vector3(0, -9.81, 0);
 const playerVelocity = new THREE.Vector3(0, 0, 0);
-const moveForce = 25.0;
-const maxSpeed = 8.0;
+const moveForce = 35.0;
+const maxSpeed = 12.0;
 const damping = 0.95;
 const jumpForce = 6.0;
 let onGround = false;
