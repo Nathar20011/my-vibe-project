@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolling Sphere Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start Screen -->
+    <div id="startScreen">
+        <h1>Rolling Sky Orbs</h1>
+        <p>Use WASD or Arrow Keys to move, Space to jump.<br>Reach the glowing goal to advance through all 20 levels!</p>
+        <div id="colorSelector">
+            <p>Choose your orb color:</p>
+            <button class="color-btn" data-color="0x0077ff" style="background-color: #0077ff;"></button>
+            <button class="color-btn" data-color="0xff0000" style="background-color: #ff0000;"></button>
+            <button class="color-btn" data-color="0x00ff00" style="background-color: #00ff00;"></button>
+            <button class="color-btn" data-color="0xffa500" style="background-color: #ffa500;"></button>
+            <button class="color-btn" data-color="0x800080" style="background-color: #800080;"></button>
+        </div>
+        <button id="startButton">Start Game</button>
+    </div>
+
+    <canvas id="gameCanvas" class="hidden"></canvas>
+
+    <!-- UI Elements -->
+    <div id="uiContainer" class="hidden">
+        <div id="levelDisplay">Level: 1</div>
+        <div id="livesDisplay">Lives: ❤️❤️❤️</div>
+        <div id="winMessage" class="hidden">You Win!</div>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html> 
