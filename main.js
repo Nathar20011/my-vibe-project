@@ -218,7 +218,7 @@ const playerVelocity = new THREE.Vector3(0, 0, 0);
 const moveForce = 35.0;
 const maxSpeed = 14.0;
 const damping = 0.95;
-const jumpForce = 7.0;
+const jumpForce = 8.0;
 let onGround = false;
 const fallThreshold = -25; // Even lower threshold for more vertical levels
 
